@@ -429,47 +429,47 @@
   </footer>
 
   <!-- Модальне вікно -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop backdrop--hidden" data-modal>
     <div class="modal">
-      <button class="button modal-close" data-modal-close>
-        <svg class="button-close" width="18" height="18">
+      <button class="button modal-close modal__close" data-modal-close>
+        <svg class="button-close modal__icon" width="18" height="18">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+      <p class="modal-text modal__text">Залиште свої дані, ми вам передзвонимо</p>
       <form class="form modal-form" action="#">
-        <label class="form-field">
-          <span class="form-label">Ім'я</span>
-          <input class="form-input" type="text" name="username">
-          <svg class="form-icon" width="18" height="18">
+        <label class="form-field form__field">
+          <span class="form-label form__label">Ім'я</span>
+          <input class="form-input form__input" type="text" name="username">
+          <svg class="form-icon form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
         </label>
-        <label class="form-field">
-          <span class="form-label">Телефон</span>
-          <input class="form-input" type="tel" name="usertel">
-          <svg class="form-icon" width="18" height="18">
+        <label class="form-field form__field">
+          <span class="form-label form__label">Телефон</span>
+          <input class="form-input form__input" type="tel" name="usertel">
+          <svg class="form-icon form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
         </label>
-        <label class="form-field">
-          <span class="form-label">Пошта</span>
-          <input class="form-input" type="email" name="useremail">
-          <svg class="form-icon" width="18" height="18">
+        <label class="form-field form__field">
+          <span class="form-label form__label">Пошта</span>
+          <input class="form-input form__input" type="email" name="useremail">
+          <svg class="form-icon form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
         </label>
-        <label class="form-comment">
-          <span class="form-label">Коментар</span>
-          <textarea class="form-textarea" name="comment" placeholder="Введіть текст" rows="6"></textarea>
+        <label class="form-comment form__comment">
+          <span class="form-label form__label">Коментар</span>
+          <textarea class="form-textarea form__textarea" name="comment" placeholder="Введіть текст" rows="6"></textarea>
         </label>
-        <label class="form-checkbox checkbox">
-          <input class="checkbox-input" type="checkbox" name="useragreement">
-          <span class="checkbox-icon"></span>
-          <span class="checkbox-label">Погоджуюся з розсилкою та приймаю</span>
-          <a href="#" class="checkbox-link">Умови договору</a>
+        <label class="form-checkbox checkbox form__checkbox">
+          <input class="checkbox-input checkbox__input" type="checkbox" name="useragreement">
+          <span class="checkbox-icon checkbox__icon"></span>
+          <span class="checkbox-label checkbox__label">Погоджуюся з розсилкою та приймаю</span>
+          <a href="#" class="checkbox-link checkbox__link">Умови договору</a>
         </label>
-        <button class="button form-button" type="submit">Відправити</button>
+        <button class="button form-button form__button" type="submit">Відправити</button>
       </form>
     </div>
   </div>

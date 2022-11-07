@@ -742,6 +742,11 @@ p {
   pointer-events: none;
 }
 
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -761,6 +766,10 @@ p {
 }
 
 .backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
