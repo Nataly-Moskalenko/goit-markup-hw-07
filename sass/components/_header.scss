@@ -1,0 +1,99 @@
+.header {
+    border-bottom: 1px solid $header-border-color;
+
+    background-color: $white-color;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav,
+.nav__list,
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+// .header-logo,
+// .footer-logo {
+//     font-family: "Raleway", sans-serif;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+// }
+
+.nav__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.header__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.nav__link,
+.header__link {
+    transition: color 250ms $time-function;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav__link {
+    color: $title-dark-color;
+}
+
+.header__link {
+    display: inline-flex;
+    vertical-align: middle;
+
+    color: $text-dark-color;
+}
+
+.nav__link--active,
+.nav__link:hover,
+.nav__link:focus,
+.header__link:hover,
+.header__link:focus {
+    color: $accent-color;
+}
+
+.header__envelope,
+.header__smartphone {
+    transition: fill 250ms $time-function;
+    margin-right: 10px;
+    fill: $text-dark-color;
+}
+
+.header__link:hover .header-envelope,
+.header__link:focus .header-envelope,
+.header__link:hover .header-smartphone,
+.header__link:focus .header-smartphone {
+    fill: $accent-color;
+}
+
+.nav__link--active {
+    position: relative;
+}
+
+.nav__link--active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 44px;
+
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+}

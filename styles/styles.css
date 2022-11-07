@@ -37,10 +37,7 @@ body {
   color: var(--title-dark-color);
 }
 
-.hero-button,
-.portfolio-button,
-.footer-button,
-.modal-button {
+.button {
   cursor: pointer;
   font-family: inherit;
 }
@@ -689,6 +686,8 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--title-dark-color)
 }
 
 .project-text {
