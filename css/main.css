@@ -332,7 +332,7 @@ p {
 }
 
 .card {
-  background-color: .card white-color;
+  background-color: #ffffff;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -349,7 +349,7 @@ p {
 }
 .card__text {
   margin-bottom: 16px;
-  color: .card__text text-dark-color;
+  color: #757575;
 }
 .card:not(:last-child) {
   margin-right: 30px;
@@ -714,9 +714,9 @@ p {
   color: #757575;
 }
 .checkbox__input {
-  appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   position: absolute;
 }
 .checkbox__input:checked + .checkbox__icon {

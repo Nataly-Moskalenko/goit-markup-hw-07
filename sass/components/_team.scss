@@ -17,7 +17,7 @@
 }
 
 .card {
-    background-color: &white-color;
+    background-color: $white-color;
 
     font-size: 16px;
     line-height: 1.19;
@@ -41,7 +41,7 @@
     &__text {
         margin-bottom: 16px;
 
-        color: &text-dark-color;
+        color: $text-dark-color;
     }
 
     &:not(:last-child) {

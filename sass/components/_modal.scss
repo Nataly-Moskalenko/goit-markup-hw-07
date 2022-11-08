@@ -196,8 +196,6 @@
 
     &__input {
         appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
         position: absolute;
 
         &:checked+.checkbox__icon {
