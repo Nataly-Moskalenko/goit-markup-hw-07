@@ -9,29 +9,29 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: $hero-background-color;
-}
 
-.hero__title {
-    max-width: 696px;
-    margin: 0 auto 30px;
+    &__title {
+        max-width: 696px;
+        margin: 0 auto 30px;
 
-    color: $white-color;
+        color: $white-color;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 
-.hero__button {
-    @extend %button;
-    transition: background-color 250ms $time-function;
+    &__button {
+        @extend %button;
+        transition: background-color 250ms $time-function;
 
-    padding: 10px 32px;
-}
+        padding: 10px 32px;
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: $button-active-color;
+        &:hover,
+        &:focus {
+            background-color: $button-active-color;
+        }
+    }
 }
