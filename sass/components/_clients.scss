@@ -18,23 +18,23 @@
     }
 
     &__logo {
-        transition: fill 250ms $time-function;
+        @include transitioned(fill);
         fill: $icon-color;
     }
 
     &__link {
-        transition: border-color 250ms $time-function;
+        @include transitioned(border-color);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 170px;
         height: 92px;
-        border: 1px solid $icon-color;
+        @include bordered($icon-color);
         border-radius: 4%;
 
         &:hover,
         &:focus {
-            border: 1px solid $accent-color;
+            @include bordered($accent-color);
         }
 
         &:hover .clients__logo,

@@ -10,7 +10,7 @@
 
     &__map,
     &__contact {
-        transition: color 250ms $time-function;
+        @include transitioned(color);
         font-style: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -76,7 +76,7 @@
 
     &__input {
         width: 358px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        @include bordered(rgba(255, 255, 255, 0.3));
         border-radius: 4px;
         padding-left: 16px;
 
