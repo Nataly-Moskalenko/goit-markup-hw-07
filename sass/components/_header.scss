@@ -25,6 +25,7 @@
     &__link {
         display: inline-flex;
         vertical-align: middle;
+
         @include transitioned(color);
 
         color: $text-dark-color;
@@ -50,6 +51,7 @@
     &__envelope,
     &__smartphone {
         @include transitioned(fill);
+
         margin-right: 10px;
         fill: $text-dark-color;
     }

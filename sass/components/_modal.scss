@@ -43,13 +43,13 @@
         top: 8px;
         right: 8px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centeredFlex;
+
         width: 30px;
         height: 30px;
 
         background: #FFFFFF;
+
         @include bordered(rgba(0, 0, 0, 0.1));
         border-radius: 50%;
 
@@ -166,7 +166,7 @@
         @extend %button;
 
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         text-align: center;
         margin: 0 auto;
         padding: 10px 52px;
@@ -215,7 +215,7 @@
 
         width: 16px;
         height: 15px;
-        border: 2px solid $title-dark-color;
+        @include bordered($title-dark-color, 2px);
         border-radius: 4px;
 
         transition: border-color 250ms $time-function,
